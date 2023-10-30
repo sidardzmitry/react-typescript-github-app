@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-typescript-github-app/static/css/main.70690559.css",
+    "main.css": "/react-typescript-github-app/static/css/main.c451ed96.css",
     "main.js": "/react-typescript-github-app/static/js/main.52f430ab.js",
     "static/media/icon-sun.svg": "/react-typescript-github-app/static/media/icon-sun.c3177fa453380a8147df081ec10c2789.svg",
     "static/media/icon-website.svg": "/react-typescript-github-app/static/media/icon-website.cf4904e442232792159e0e1bd2d500aa.svg",
@@ -10,11 +10,11 @@
     "static/media/icon-moon.svg": "/react-typescript-github-app/static/media/icon-moon.f5076b814caae9443a0b8ee24682ed13.svg",
     "static/media/icon-search.svg": "/react-typescript-github-app/static/media/icon-search.0cc0c98424cc75d5e1dfbb9e3abb6785.svg",
     "static/media/icon-location.svg": "/react-typescript-github-app/static/media/icon-location.f6d18983ab4be8b3314d51c208fba4d4.svg",
-    "main.70690559.css.map": "/react-typescript-github-app/static/css/main.70690559.css.map",
+    "main.c451ed96.css.map": "/react-typescript-github-app/static/css/main.c451ed96.css.map",
     "main.52f430ab.js.map": "/react-typescript-github-app/static/js/main.52f430ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.70690559.css",
+    "static/css/main.c451ed96.css",
     "static/js/main.52f430ab.js"
   ]
 }
