@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Container } from "components/Container";
+import { Header } from "components/Header";
+import { Search } from "components/Search";
+import { UserCard } from "components/UserCard";
+import { UserGithub, UserLocalGithub, ErrorGithub } from "types";
 
-function App() {
+import { defaultUser } from "./mock/index";
+import { isGitHubUser } from "utils/typeguards";
+import { extractLocalUser } from "utils/exract-local-user";
+
+const BASE_URL = "https://api.github.com/users/";
+
+const App = () => {
+  const [user, setUser] = useState<UserLocalGithub | null>(defaultUser);
+
+  const fetchUser = async (username: string) => {
+    const url = BASE_URL + username;
+
+    const response = await fetch(url);
+    const user = (await response.json()) as UserGithub | ErrorGithub;
+
+    if (isGitHubUser(user)) {
+      setUser(extractLocalUser(user));
+    } else {
+      setUser(null);
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header />
+      <Search hasError={!user} onSubmit={fetchUser} />
+      {user && <UserCard {...user} />}
+    </Container>
   );
-}
+};
 
-export default App;
+export {App};
