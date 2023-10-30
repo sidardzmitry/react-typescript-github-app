@@ -2,7 +2,8 @@
     width: 100%;
     padding: 0 24px;
     @media (max-width: 767px) {
-      width: 734px;
+      max-width: 734px;
       margin: 0 auto;
+      padding: 0 12px;
     }
   }

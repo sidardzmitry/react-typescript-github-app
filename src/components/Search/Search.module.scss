@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     box-shadow: var(--search-shadow);
-    border-radius: 15px;
+    border-radius: 4px;
   
     @media (min-width: 767px) {
       padding: 10px 10px 10px 30px;
@@ -46,7 +46,6 @@
   .textField {
     padding: 0 10px;
     flex-grow: 5;
-    height: 60px;
     max-width: calc(100% - 100px - 20px);
     border: none;
     color: var(--search-color);
@@ -75,7 +74,7 @@
     right: 50%;
     bottom: 5px;
     color: var(--color-mint);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 700;
   
