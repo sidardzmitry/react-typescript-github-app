@@ -1,5 +1,6 @@
 {
   "name": "react-ts-github-app",
+  "homepage": "https://sidardzmitry.github.io/react-typescript-github-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
